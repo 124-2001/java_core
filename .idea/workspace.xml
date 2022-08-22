@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f12172aa-f1cc-4abf-9eb2-813243ca68a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/javacore/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/javacore/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javacore/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai_tap_javacore/src/main/java/bai1/javacore/techmaster/Bai_tap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap_javacore/src/main/java/bai1/javacore/techmaster/Bai_tap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ASUS/Desktop/java_core"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

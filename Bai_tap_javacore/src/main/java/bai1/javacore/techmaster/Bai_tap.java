@@ -6,7 +6,44 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Bai_tap {
 
         public static void main(String[] args) {
-            Bai_9();
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Nhap bai toan  :");
+            int a = scanner.nextInt();
+            switch (a){
+                case 1:
+                    Bai_1();
+                    break;
+                case 2:
+                    Bai_2();
+                    break;
+                case 3:
+                    Bai_3();
+                    break;
+                case 4:
+                    Bai_4();
+                    break;
+                case 5:
+                    Bai_5();
+                    break;
+                case 6:
+                    Bai_6();
+                    break;
+                case 7:
+                    Bai_7();
+                    break;
+                case 8:
+                    Bai_8();
+                    break;
+                case 9:
+                    Bai_9();
+                    break;
+                case 10:
+                    Bai_10();
+                    break;
+                case 11:
+                    Bai_11();
+                    break;
+            }
         }
 
         public static void Bai_1(){
