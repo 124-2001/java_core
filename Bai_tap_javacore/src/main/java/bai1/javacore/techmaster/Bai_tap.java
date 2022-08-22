@@ -161,7 +161,7 @@ public class Bai_tap {
                 case 3:
                     System.out.print("So giay :");
                     double giay=scanner.nextDouble();
-                    System.out.println(Doi_giay_phut(Doi_phut_gio(giay))+" gio , "+Doi_gio_nam(Doi_phut_gio(Doi_giay_phut(giay)))+" nam");
+                    System.out.println(Doi_phut_gio(Doi_giay_phut(giay))+" gio , "+Doi_gio_nam(Doi_phut_gio(Doi_giay_phut(giay)))+" nam");
                     break;
 
             }
