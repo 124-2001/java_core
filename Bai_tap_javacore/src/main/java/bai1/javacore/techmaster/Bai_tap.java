@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Bai_tap {
 
         public static void main(String[] args) {
-            Bai_10();
+            Bai_9();
         }
 
         public static void Bai_1(){
@@ -87,7 +87,11 @@ public class Bai_tap {
             }
         }
         public static void Bai_9(){
-
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("So cho truoc :");
+            double a = scanner.nextInt();
+            double ramdom = a-Math.random();
+            System.out.println("So nho hon so da cho la :" +ramdom );
         }
         public static void Bai_10(){
             Scanner scanner = new Scanner(System.in);
@@ -100,8 +104,42 @@ public class Bai_tap {
 
         }
         public static void Bai_11(){
+            System.out.println("1) Số giờ ");
+            System.out.println("2) Số phút ");
+            System.out.println("3) Số giây ");
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("chon option :");
+            int a = scanner.nextInt();
+            switch (a){
+                case 1:
+                    System.out.print("So gio :");
+                    double gio=scanner.nextDouble();
+                    System.out.println(gio+" gio , "+Doi_gio_nam(gio)+" nam");
+                    break;
+                case 2:
+                    System.out.print("So phut :");
+                    double phut=scanner.nextDouble();
+                    System.out.println(Doi_phut_gio(phut)+" gio , "+Doi_gio_nam(Doi_phut_gio(phut))+" nam");
+                    break;
+                case 3:
+                    System.out.print("So giay :");
+                    double giay=scanner.nextDouble();
+                    System.out.println(Doi_giay_phut(Doi_phut_gio(giay))+" gio , "+Doi_giay_phut(Doi_gio_nam(Doi_phut_gio(giay)))+" nam");
+                    break;
+
+            }
+
 
         }
+        public static double Doi_phut_gio(double phut){
+            return phut/60;
+        }
+         public static double Doi_gio_nam(double gio){
+            return (gio/24)/365;
+        }
+        public static double Doi_giay_phut(double giay){
+            return giay/60;
+    }
     }
 
 
