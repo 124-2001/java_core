@@ -1,4 +1,28 @@
-package bai2.javacore.techmaster;/[-po0i9uy7tr4ew3se4rtyu8y76t5r4e3we4r5t643]
+package bai2.javacore.techmaster;
+
+import java.util.Scanner;
+
+public class Bai_tap_2 {
+    public static void main(String[] args) {
+        Bai_2();
+    }
+
+    public static void Bai_1(){
+        for(int i=1;i<=5;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void Bai_2(){
+        int count=0;
+        for(int i=1;i<=4;i++){
+            for(int j=count ;j<=i;j++){
+                System.out.print(count);
+                count++;
+            }
             count++;
             System.out.println();
         }
