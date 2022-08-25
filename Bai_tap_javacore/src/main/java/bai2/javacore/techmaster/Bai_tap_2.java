@@ -4,7 +4,48 @@ import java.util.Scanner;
 
 public class Bai_tap_2 {
     public static void main(String[] args) {
-        Bai_9();
+        while (true){
+            Scanner sc= new Scanner(System.in);
+            System.out.println("******___________________******");
+            System.out.print("Hay nhap bai toan :");
+            int n = sc.nextInt();
+            while (n>10){
+                System.out.print("Khong duoc lon hon 10 hay nhap lai :");
+                n = sc.nextInt();
+            }
+            switch (n){
+                case 1:
+                    Bai_1();
+                    break;
+                case 2:
+                    Bai_2();
+                    break;
+                case 3:
+                    Bai_3();
+                    break;
+                case 4:
+                    Bai_4();
+                    break;
+                case 5:
+                    Bai_5();
+                    break;
+                case 6:
+                    Bai_6();
+                    break;
+                case 7:
+                    Bai_7();
+                    break;
+                case 8:
+                    Bai_8();
+                    break;
+                case 9:
+                    Bai_9();
+                    break;
+                case 10:
+                    Bai_10();
+                    break;
+            }
+        }
     }
 
     public static void Bai_1(){
@@ -54,7 +95,7 @@ public class Bai_tap_2 {
 
     public static void Bai_5(){
         Scanner sc= new Scanner(System.in);
-        System.out.print("Hay nhap so :");
+        System.out.print("Hay nhap chieu cao cua nua hinh thoi :");
         int n = sc.nextInt();
         int count1 = n-1;
         for(int i=1;i<=n;i++){
@@ -188,7 +229,7 @@ public class Bai_tap_2 {
             count2--;
         }
     }
-    public static void Bai_9b(){
+    public static void Bai_10(){
 
         String[] a ={"A","B","C","D","E","F","G","H","I"};
         int count = a.length;
