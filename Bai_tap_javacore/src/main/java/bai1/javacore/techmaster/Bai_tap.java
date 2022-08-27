@@ -2,23 +2,13 @@ package bai1.javacore.techmaster;
 import java.util.Scanner;
 
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.logging.SimpleFormatter;
 
 public class Bai_tap {
 
         public static void main(String[] args) {
-            deQuy();
-        }
-
-        public static void deQuy() {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Nhap bai toan  :");
             int a = scanner.nextInt();
-
-            while ( a>11) {
-                deQuy();
-            }
-
             switch (a){
                 case 1:
                     Bai_1();
@@ -53,8 +43,6 @@ public class Bai_tap {
                 case 11:
                     Bai_11();
                     break;
-                default:
-                    System.out.println("điều kiện nhập không đúng phải từ bài 1 đến 11");
             }
         }
 
@@ -70,7 +58,7 @@ public class Bai_tap {
         }
         public static void Bai_3(){
             double d =  9 /5;
-            System.out.println("So d "+d);
+            System.out.println("So d :" + d);
             d = (double)9 / (double)5;
             System.out.println("Sua code double d = (double)9 / (double)5 : "+ d);
         }
@@ -98,7 +86,7 @@ public class Bai_tap {
             }
             else if (a==10|b==10) {
                 c=true;
-            } else if (a-b==10||b-a==10) {
+            } else if (a-b==10|b-a==10) {
                 c=true;
             }
             else {
@@ -121,7 +109,7 @@ public class Bai_tap {
             System.out.print("Chi so khoi co the (BMI) :"+ kg/(Math.pow(cm,2)));
         }
         public static void Bai_7(){
-            SimpleFormatter sdf = new SimpleFormatter();
+            System.out.println(System.currentTimeMillis());
         }
         public static void Bai_8(){
             Scanner scanner = new Scanner(System.in);
@@ -148,7 +136,7 @@ public class Bai_tap {
             int a = scanner.nextInt();
             System.out.print("So ket thuc :");
             int b = scanner.nextInt();
-            int c=a+(int)Math.random()*Math.abs(b-a);
+            int c=ThreadLocalRandom.current().nextInt(a,b);
             System.out.println(c);
 
         }
@@ -173,7 +161,7 @@ public class Bai_tap {
                 case 3:
                     System.out.print("So giay :");
                     double giay=scanner.nextDouble();
-                    System.out.println(Doi_giay_phut(Doi_phut_gio(giay))+" gio , "+Doi_gio_nam(Doi_phut_gio(Doi_giay_phut(giay)))+" nam");
+                    System.out.println(Doi_phut_gio(Doi_giay_phut(giay))+" gio , "+Doi_gio_nam(Doi_phut_gio(Doi_giay_phut(giay)))+" nam");
                     break;
 
             }
