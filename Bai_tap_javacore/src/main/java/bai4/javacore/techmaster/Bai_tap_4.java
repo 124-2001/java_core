@@ -61,15 +61,37 @@ public class Bai_tap_4 {
             arrInt[i]=sc.nextInt();
         }
         In_Mang(arrInt);
+        //tao 1 mang mới
+        int[] new_arrInt = new int[n+1];
         System.out.print("Mang sau khi chen la: ");
-        for(int i=0;i<n;i++){
-            if(i>2){
-                arrInt[i+1]=arrInt[i];
-            }
+        for(int i=0;i<=n;i++){
             if(i==2){
-                arrInt[i]=5;
+                new_arrInt[i]=5;
+            }
+            if(i<2){
+                new_arrInt[i]=arrInt[i];
+            }
+            if(i>2 ){
+                new_arrInt[i]=arrInt[i-1];
             }
         }
-        In_Mang(arrInt);
+        In_Mang(new_arrInt);
+    }
+
+    public static void Bai_4(){
+        String[] array1 = {"Python", "JAVA", "PHP", "C#", "C++", "SQL"};
+        String[] array2 = {"MySQL", "SQL", "SQLite", "Oracle", "PostgreSQL", "DB2", "JAVA"};
+
+        System.out.print("Cac ky tu giong nhau la : ");
+        Lay_string_giong_nhau(array1,array2);
+    }
+    public static void Lay_string_giong_nhau(String[] arr1,String[] arr2){
+        for(int i=0;i< arr1.length;i++){
+            for(int j=0;j<arr2.length;j++){
+                if(arr1[i]==arr2[j]){
+                    System.out.print(arr1[i]+ "  ");
+                }
+            }
+        }
     }
 }
